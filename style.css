@@ -1,3 +1,46 @@
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #333;
+}
+
+li {
+	float: left;
+	font-size: 100%;
+}
+
+ol{
+	color:black;
+	font-size: 170%;
+}
+
+
+p{
+	font-size: 19px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .container {
   position: relative;
   text-align: center;
@@ -15,19 +58,6 @@
 
 
 
-/* Homepage slider*/
-.carousel-control.right, .carousel-control.left {
-  background-image: none;
-  color: #f4511e;
-}
-
-.carousel-indicators li {
-  border-color: #f4511e;
-}
-
-.carousel-indicators li.active {
-  background-color: #f4511e;
-}
 
 .item h4 {
   font-size: 19px;
@@ -53,20 +83,4 @@
 		}
 
 
-    ul {
-			list-style-type: none;
-			margin: 0;
-			padding: 0;
-			overflow: hidden;
-			background-color: #333;
-		}
-
-		li {
-			float: left;
-			font-size: 100%;
-		}
-
-		ol{
-			color:white;
-			font-size: 150%;
-		}
+    
