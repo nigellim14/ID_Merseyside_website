@@ -118,7 +118,6 @@ $(document).ready(function () {
           data-name='${response[i].name}' 
           data-msg='${response[i].message}' 
           data-email='${response[i].email}'>Update</a></td></tr>`;
-  
         }
   
         //[STEP 9]: Update our HTML content
@@ -141,7 +140,6 @@ $(document).ready(function () {
       let contactName = $(this).data("name");
       let contactMsg = $(this).data("msg");
       let contactEmail = $(this).data("email");
-      console.log($(this).data("msg"));
   
       //[STEP 11]: Load in our data from the selected row and add it to our update contact form 
       $("#update-contact-name").val(contactName);
@@ -202,6 +200,19 @@ $(document).ready(function () {
     }//end updateform function
   
   })
+
+
+
+
+/* Expanding page */
+  function openTab(tabName) {
+    var i, x;
+    x = document.getElementsByClassName("containerTab");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+    }
+    document.getElementById(tabName).style.display = "block";
+  }
   
 
 

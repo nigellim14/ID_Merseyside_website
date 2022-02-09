@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width">
-	<title>Course Page</title>
+	<title>Immersive Media Page</title>
 	<link href="style.css" rel="stylesheet" type="text/css" />
 
 
@@ -24,6 +24,12 @@
     h1{
 			text-shadow: 2px 2px 5px rgb(143, 228, 31);
 		}
+
+    h2{
+      color: white;
+      text-shadow: 2px 2px 5px rgb(0, 0, 0);
+      font-size: 30px;
+    }
 
     
 		div{
@@ -75,17 +81,67 @@
   }
   .column2 {
     float: left;
-    width: 32.35%;
-    padding: 5px;
+    width: 33%;
+    padding: 4px;
     color: white;
   }
 
   .column3 {
     float: left;
-    width: 32.35%;
-    padding: 5px;
+    width: 33%;
+    padding: 4px;
     color: white;
   }
+
+  p{
+    color: white;
+  }
+
+  
+
+
+
+
+
+  /* Expanding Grid */
+
+  * {
+  box-sizing: border-box;
+}
+
+
+
+/* The grid: Three equal columns that floats next to each other */
+.column4 {
+  float: left;
+  width: 33.33%;
+  padding: 50px;
+  text-align: center;
+  font-size: 25px;
+  cursor: pointer;
+  color: white;
+}
+
+.containerTab {
+  padding: 20px;
+  color: white;
+}
+
+/* Clear floats after the columns */
+.row2:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Closable button inside the container tab */
+.closebtn {
+  float: right;
+  color: white;
+  font-size: 35px;
+  cursor: pointer;
+}
+
 
 
 
@@ -116,40 +172,72 @@
             <div class="centered">Immersive Media</div>
         </div>
 
+
+
+
+        <div style="text-align:center">
+          <h2>To see what you will be learning click on the boxes below</h2>
+        </div>
+        
+        <!-- Three columns -->
+        <div class="row">
+          <div class="column4" onclick="openTab('b1');" style="background:rgb(240, 189, 50);">
+            Year 1
+          </div>
+          <div class="column4" onclick="openTab('b2');" style="background:rgb(57, 57, 235);">
+            Year 2
+          </div>
+          <div class="column4" onclick="openTab('b3');" style="background:rgb(240, 189, 50);">
+            Year 3
+          </div>
+        </div>
+        
+        <div id="b1" class="containerTab" style="display:none;background:rgb(54, 54, 54)">
+          <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+          <h2>Year 1</h2>
+          <p>3D Fundamentals<br>This module introduces students to basic digital 3D production workflow to create assets for interactive projects. They will practice on doing high-poly detail onto low-poly mapping, texturing, animation, real-time lighting and rendering.<br><br>Design Principles<br>This module introduces students to the basic elements and principles of design. They will practice visual communication and the aesthetic use of line, shape, form, color, texture.</p>
+        </div>
+        
+        <div id="b2" class="containerTab" style="display:none;background:rgb(54, 54, 54)">
+          <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+          <h2>Year 2</h2>
+          <p>Applied Design<br>This module introduces students to design application through digital props and environment concept illustration. Being able to practice perspective drawing, constructive drawing, color rendering, and compositional design.<br><br>Experiental Design<br>This module exposes and introduce students to designing media content and applications for various platform. With the concept of designing extended reality (XR) products with heavy emphasis on the User Experience (UX)</p>
+        </div>
+        
+        <div id="b3" class="containerTab" style="display:none;background:rgb(54, 54, 54)">
+          <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+          <h2>Year 3</h2>
+          <p>Lorem ipsum dolor sit amet, te quo doctus abhorreant, et pri deleniti intellegat, te sanctus inermis ullamcorper nam. Ius error diceret deseruisse ad</p>
+        </div>
+
+        <br><br><br>
+      
+
+
+
+
+
+
+
         <div class="column">
             <table>
               <tr>
-                <th>Year 1</th>
-                <th>3D Fundamentals</th>
-                <th>Design Principles</th>
+                <th>Career Prospects</th>
+                <th>Further Studies</th>
+                <th>Text</th>
               </tr>
               
               <tr>
-                <td>Summary</td>
-                <td><p>This module introduces students to basic digital 3D production workflow to create assets for interactive projects. Students will practice basic modelling, UV unwrapping, digital sculpting, high-poly detail onto low-poly mapping, texturing, rigging, animation, real-time lighting and rendering. Students will learn to produce hard-surface virtual objects for real-time engine.</p></td>
-                <td><p>This module introduces students to basic elements and principles of design. Students will practice visual communication and self-branding through aesthetic use of line, shape, form, color, texture, typography, scale, contrast, rhythm and balance. Students will be trained in the usage of digital design tools and application of modern industrial practices to communicate the concepts, designs and solutions.</p></td>
+                <td>3D artist, Applications Developer, UI/UX designer</td>
+                <td>Opens doors to pursue a degree at reputable local and overseas universities.<br><br>Arsenal University, Manchester University, Chelsea University</td>
+                <td>Text</td>
 
             </tr>
             </table>
             
             
             <p></p>
-            
-        <div class="column">
-            <table>
-              <tr>
-                <th>Year 2</th>
-                <th>Applied Design</th>
-                <th>Experiental Design</th>
-              </tr>
-    
-              <tr>
-                <td>Summary</td>
-                <td><p>This module introduces students to design application through digital props and environment concept illustration. Students will practice perspective drawing, constructive drawing, color rendering, and compositional design. Students will learn to produce visual plans essential in real-time immersive production workflow.</p></td>
-                <td><p>This module exposes and introduce students to designing media content and applications for various platforms. It covers the concept of designing extended reality (XR) products with heavy emphasis on the User Experience (UX) for the respective platforms. Students will be tested on their observational, research and problem-solving skills to seek out current/future technological advancements, and to come up with proposals and prototypes for actual implementation.</p></td>
-              </tr>
-              
-            </table>
+
 
             <br>
 
@@ -199,11 +287,14 @@
                   </div>
 
 
-                  <h2>Welcome to my our game corner</h2>
-                  <p>A simple yet fun game we created from what we learned in all of this modules. Click here to give it a try!!!</p>
+                  <h2>WELCOME TO MY OUR GAME CORNER THAT OUR STUDENT CREATED</h2>
+                  <p>Leon Comments:<br>It is a simple yet fun game we created from what we learned in all of this modules that we learned through the whole semester in this Immersive Media course. During the end of the whole semester we are task to create a game that provide a certain requirement, through our hands-on projects we will gain the technical and make use of it.<br> Click here to give it a try!!!</p>
                   <button>
                     <a href="IMMinigame.html" class="button">Click here to play</a>
                   </button>
+
+
+
 
 
       </body>
