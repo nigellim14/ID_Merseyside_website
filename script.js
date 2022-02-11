@@ -216,5 +216,17 @@ $(document).ready(function () {
   
 
 
+  /* Prompt message*/
+
+  function myFunction() {
+    var txt;
+    if (confirm("Are you ready to move to the gaming page and challenge for the high score?")) {
+      txt = "Nice! Now you got click the button below 'START GAME' to start playing. There is a demo above to show you on how the game should be played, have fun and enjoy all the best";
+    } else {
+      txt = "Why not? There are some interesting concept that our student learned that is being implemented by and it will definitely be fun to try it out.";
+    }
+    document.getElementById("test").innerHTML = txt;
+  }
+
 
   

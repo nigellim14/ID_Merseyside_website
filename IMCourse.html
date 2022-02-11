@@ -11,7 +11,7 @@
 <style>
 		
 		body{
-			background-image: url(Images/coursewallpaper.jpg);
+			background-image: url(Images/IMCourseWallpaper.jpg);
             background-repeat: no-repeat;
             background-attachment: fixed;  
             background-size: cover;
@@ -23,12 +23,16 @@
 
     h1{
 			text-shadow: 2px 2px 5px rgb(143, 228, 31);
+      text-align: left;
+      font-size: 35px;
 		}
 
     h2{
       color: white;
       text-shadow: 2px 2px 5px rgb(0, 0, 0);
       font-size: 30px;
+      text-align: center;
+      background-color: #1f1f20;
     }
 
     
@@ -95,6 +99,7 @@
 
   p{
     color: white;
+    font-size: 19px;
   }
 
   
@@ -125,6 +130,7 @@
 .containerTab {
   padding: 20px;
   color: white;
+
 }
 
 /* Clear floats after the columns */
@@ -141,6 +147,102 @@
   font-size: 35px;
   cursor: pointer;
 }
+
+
+
+/*About our team*/
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column_team {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+  height: 330px;
+  background-color: rgb(199, 151, 49);
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #2d3036;
+  color: white;
+}
+
+.container_team {
+  padding: 0 16px;
+}
+
+.container_team::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: rgb(29, 28, 28);
+}
+
+.button_team {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button_team:hover {
+  background-color: #555;
+}
+
+@media screen and (max-width: 650px) {
+  .column_team {
+    width: 100%;
+    display: block;
+  }
+}
+
+
+/* Responsive Image with text*/
+
+.container_responsive {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.container img {vertical-align: middle;}
+
+.container_responsive .content {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+}
+
+
+
+
+
 
 
 
@@ -168,8 +270,8 @@
         
 
         <div class="container">
-            <img src="Images/WelcomePic.jpg" alt="main cover picture" width="1502">
-            <div class="centered">Immersive Media</div>
+            <img src="Images/IMCoverPage.jpg" alt="main cover picture" width="1502">
+            <div class="centered">IMMERSIVE MEDIA</div>
         </div>
 
 
@@ -182,13 +284,13 @@
         <!-- Three columns -->
         <div class="row">
           <div class="column4" onclick="openTab('b1');" style="background:rgb(240, 189, 50);">
-            Year 1
+            Year 1 <br>↓ 
           </div>
           <div class="column4" onclick="openTab('b2');" style="background:rgb(57, 57, 235);">
-            Year 2
+            Year 2 <br>↓
           </div>
           <div class="column4" onclick="openTab('b3');" style="background:rgb(240, 189, 50);">
-            Year 3
+            Year 3 <br>↓
           </div>
         </div>
         
@@ -207,7 +309,7 @@
         <div id="b3" class="containerTab" style="display:none;background:rgb(54, 54, 54)">
           <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
           <h2>Year 3</h2>
-          <p>Lorem ipsum dolor sit amet, te quo doctus abhorreant, et pri deleniti intellegat, te sanctus inermis ullamcorper nam. Ius error diceret deseruisse ad</p>
+          <p>Digital Audio Design<br>This module introduces the skills of prouction techniques of audio and sound effects, ambient sounds and background music to further enchance the user experience in creating moods when playing games.<br><br>Internship<br>Following the 6-months Internship, students will be provided with the opportunity to apply their skills learnt within this course to actual, working companies/ organisations where they will learn sharpen the finest pounts of project planning and control issues relating to the course. </p>
         </div>
 
         <br><br><br>
@@ -224,13 +326,13 @@
               <tr>
                 <th>Career Prospects</th>
                 <th>Further Studies</th>
-                <th>Text</th>
+                <th>Course Overview</th>
               </tr>
               
               <tr>
                 <td>3D artist, Applications Developer, UI/UX designer</td>
                 <td>Opens doors to pursue a degree at reputable local and overseas universities.<br><br>Arsenal University, Manchester University, Chelsea University</td>
-                <td>Text</td>
+                <td>Are you exctied to get the chance to try out and create your own virtual world in your flat screen? Well this is the course that can help you with that! You will learn on how to create experience in the form of media where we communicate, work and play in the future throught the Diploma of Immersive Media!</td>
 
             </tr>
             </table>
@@ -243,19 +345,19 @@
 
             <div class="row">
               <div class="column2">
-                <iframe width="490" height="405" src="Video/Leon.mp4" title="video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe width="490" height="380" src="Video/Leon.mp4" title="video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 <p>Ice-Cream Truck Created during 3D Fundamentals.</p>
               </div>
 
               
               <div class="column2">
-                <iframe width="490" height="405" src="Video/YouTube_like.mp4" title="video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe width="490" height="380" src="Video/YouTube_like.mp4" title="video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 <p>UX Microinteraction of a YouTube Like button created during Applied Design using Adobe XD</p>
               </div>
 
                             
               <div class="column2">
-                <iframe width="490" height="405" src="Video/Robot_Walk.mp4" title="video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe width="490" height="380" src="Video/Robot_Walk.mp4" title="video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 <p>Animated robot created during 3D Fundamentals</p>
               </div>
             </div>
@@ -281,17 +383,158 @@
                   </div>
 
 
+
+                  <div class="row">
+                    <div class="column3">
+                      <img src="Images/ProductWork1.jpg" alt="Chinese new Year Drum" style="width:100%">
+                      <p>Drum modelled with maya and texturized in Substance Painter.</p>
+                    </div>
+    
+                      <div class="column3">
+                        <img src="Images/ProductWork2.jpg"alt="Flare Gun" style="width:100%">
+                        <p>Flare Gun modelled using Maya software and textures done using Substance Painter. Final lighting and rendering done in Mixamo</p>
+                      </div>
+    
+                        <div class="column3">
+                          <img src="Images/ProductWork3.jpg" alt="Firecrackers" style="width:100%">
+                          <p>Fireworks modelled using Maya software and textures done using Substance Painter.</p>
+                        </div>
+                      </div>
+
+
+
+
+
+
+
+
                   <div class="container">
-                    <img src="Images/WelcomePic.jpg" alt="main cover picture" width="1502">
-                    <div class="centered">Game Section</div>
+                    <img src="Images/GameCoverPage.jpg" alt="main cover picture" width="1502">
+                    <div class="centered">GAME SECTION</div>
                   </div>
 
 
-                  <h2>WELCOME TO MY OUR GAME CORNER THAT OUR STUDENT CREATED</h2>
-                  <p>Leon Comments:<br>It is a simple yet fun game we created from what we learned in all of this modules that we learned through the whole semester in this Immersive Media course. During the end of the whole semester we are task to create a game that provide a certain requirement, through our hands-on projects we will gain the technical and make use of it.<br> Click here to give it a try!!!</p>
+                  <h2>WELCOME TO THE GAMING CORNER THAT OUR STUDENT CREATED</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                  <h2 style="text-align:center">"Game Developer Team"</h2>
+                  <div class="row">
+                    <div class="column_team">
+                      <div class="card">
+                        <div class="container_team">
+                          <h2>Leon</h2>
+                          <p class="title">Project Designer</p>
+                          <p>In this course, we had learned a variety of skills which are useful for modelling, coding, and animating individually. With these skills that we had learned combined, we were able to create animations and games that we hoped to be able to create and so we did, and it was a fantistic feeling of accomplishment. </p>
+                          <p>S10207988@connect.np.edu.sg</p>
+                          <a class="button_team" href="https://www.linkedin.com/in/leon-chai-31431a1a8/">Linkedin Contact</a>
+                        </div>
+                      </div>
+                    </div>
+                  
+                    <div class="column_team">
+                      <div class="card">
+                        <div class="container_team">
+                          <h2>Lim Shiwu Nigel</h2>
+                          <p class="title">Project Leader</p>
+                          <p>With what we have learned in this course we have benefited on implementing the skills we had to this game, it been a enjoyable learning journey getting to learn all this and having to create such a wonderful projcet together with my team members. With the skills we learned it will help us in our intership in Year 3</p>
+                          <p>S10208206@connect.np.edu.sg</p>
+                          <a class="button_team" href="https://www.linkedin.com/in/lim-shiwu-nigel-84752a176/">Linkedin Contact</a>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div class="column_team">
+                      <div class="card">
+                        <div class="container_team">
+                          <h2>Pooh Xina</h2>
+                          <p class="title">Project Vice Leader</p>
+                          <p>We actually had a wonderful time in this course, sure there were ups and downs but what really matters is that knowledge and skills we learnt after this. Compared to who I was before joining, I would have never knew the huge amount of newfound skills I had received and I will use this to help me in my future path.</p>
+                          <p>S123484307@connect.np.edu.sg</p>
+                          <a class="button_team" href="#">Linkedin Contact</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                  <div class="row">
+                    <div class="column2">
+                    </div>
+
+                    <div class="column2">
+                      <iframe width="530" height="320" src="Video/IM_DemoGame.mp4" title="video player" frameborder="0" allowfullscreen></iframe>
+                      <p>Game Demo allows you to get a idea of how our game is played</p>
+                      <button onclick="myFunction()">Are you ready to take on the challenge in this game?</button>
+                  <p id="test"></p>
+
                   <button>
-                    <a href="IMMinigame.html" class="button">Click here to play</a>
+                    <a href="IMMinigame.html" class="button">START GAME</a>
                   </button>
+                    </div>
+                    <div class="column2">
+                    </div>
+                  </div>
+
+
+
+
+
+                  <div class="container_responsive">
+                    <img src="Images/GamePlay.jpg" alt="Notebook" style="width:100%;">
+                    <div class="content">
+                      <h1>Leon Comments</h1>
+                      <p>A simple replica of that flappy bird game, brings me back the nostalgia and so were the hidden anger that I never knew I still had left within me. Ended up paying $15,000 of total hospital bills for breaking the ribs of several students along my fit of rage as well ad my broken hands. STill I enjoyed this simple yet fun game. Heavily recommend.</p>
+                    </div>
+                  </div>
+
+                    <br><br>
+
+                  <div class="container_responsive">
+                    <img src="Images/GamePlay1.jpg" alt="Notebook" style="width:100%;">
+                    <div class="content">
+                      <h1>Nigel Comments</h1>
+                      <p></p>
+                    </div>
+                  </div>
+
+
+                    
+
+                  
+
+
+
+
+
+          
 
 
 
