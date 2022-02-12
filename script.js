@@ -216,7 +216,7 @@ $(document).ready(function () {
   
 
 
-  /* Prompt message*/
+  /* Prompt message for user to play game*/
 
   function myFunction() {
     var txt;
@@ -229,4 +229,7 @@ $(document).ready(function () {
   }
 
 
-  
+
+
+
+ 
