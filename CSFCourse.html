@@ -149,101 +149,12 @@
 }
 
 
-
-/*About our team*/
-
-html {
-  box-sizing: border-box;
-}
-
-*, *:before, *:after {
-  box-sizing: inherit;
-}
-
-.column_team {
+.columnCourse {
   float: left;
-  width: 33.3%;
-  margin-bottom: 16px;
-  padding: 0 8px;
+  width: 25%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
 }
-
-.card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  margin: 8px;
-  height: 330px;
-  background-color: rgb(199, 151, 49);
-}
-
-.about-section {
-  padding: 50px;
-  text-align: center;
-  background-color: #2d3036;
-  color: white;
-}
-
-.container_team {
-  padding: 0 16px;
-}
-
-.container_team::after, .row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
-.title {
-  color: rgb(29, 28, 28);
-}
-
-.button_team {
-  border: none;
-  outline: 0;
-  display: inline-block;
-  padding: 8px;
-  color: white;
-  background-color: #000;
-  text-align: center;
-  cursor: pointer;
-  width: 100%;
-}
-
-.button_team:hover {
-  background-color: #555;
-}
-
-@media screen and (max-width: 650px) {
-  .column_team {
-    width: 100%;
-    display: block;
-  }
-}
-
-
-/* Responsive Image with text*/
-
-.container_responsive {
-  position: relative;
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-.container img {vertical-align: middle;}
-
-.container_responsive .content {
-  position: absolute;
-  bottom: 0;
-  background: rgb(0, 0, 0); /* Fallback color */
-  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
-  color: #f1f1f1;
-  width: 100%;
-  padding: 20px;
-}
-
-
-
-
-
-
 
 
 
@@ -382,55 +293,42 @@ html {
 
 
                   <div class="container">
-                    <img src="Images/GameCoverPage2.jpg" alt="main cover picture" width="1502">
-                    <div class="centered">GAME SECTION</div>
+                    <img src="Images/CSF_CoverPage.jpg" alt="main cover picture" width="1502">
+                    <div class="centered">BE PART IN KEEPING THE ONLINE WORLD SECURE</div>
                   </div>
 
 
-                  <h2>WELCOME TO THE GAMING CORNER THAT OUR IT STUDENT CREATED</h2>
+                  <h2>Course Curriculum & Prescribed Electives</h2>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                  <h2 style="text-align:center">"CSF Student have their said"</h2>   
-          
-                  
-
-                  <div class="container_responsive">
-                    <img src="Images/GamePlay2.jpg" alt="Notebook" style="width:100%;">
-                    <div class="content">
-                      <h1>Nigel Comments</h1>
-                      <p>Text</p>
+                  <div class="rowCourse">
+                    <div class="columnCourse" style="background-color:rgb(204, 189, 51);">
+                      <h2>CYBERSECURITY TRACK</h2>
+                      <p>• Cloud Computing Security<br>• Cybersecurity Attack & Defense <br>• Cybersecurity Operations & Intelligence <br> • Mobile Security <br> • Operations Security</p>
                     </div>
-                  </div>
-
-                    <br><br>
-
-                  <div class="container_responsive">
-                    <img src="Images/GamePlay3.jpg" alt="Notebook" style="width:100%;">
-                    <div class="content">
-                      <h1>Leon Comments</h1>
-                      <p>Text</p>
+                    <div class="columnCourse" style="background-color:rgb(39, 169, 209);">
+                      <h2>CYBER FORENSICS TRACK</h2>
+                      <p>• Advanced Cyber Attack Forensic Techniques <br>• Cyber Forensic Process <br> • Disaster Recovery & Finance Continuity Management <br> • Malware Analysis
+                        </p>
+                    </div>
+                    <div class="columnCourse" style="background-color:rgb(214, 46, 46);">
+                      <h2>CROSSOVER-DISCIPLINARY ELECTIVE </h2>
+                      <p> • Entrepreneurship <br> • Foundation of AI <br> • Robotic Process Automation <br> • Social Media Analytics</p>
+                    </div>
+                    <div class="columnCourse" style="background-color:rgb(78, 69, 69);">
+                      <h2>This diploma lets you...</h2>
+                      <p>• Discover how to bulit the services and networks, and keep them from cyber attack and safe from hacker.<br><br> • Write programs to connect sensors and software, so as to develop smart solutions for various organisaztion and industry such as healthcare, transportation and retail.</p>
                     </div>
                   </div>
 
 
+    
+                
+
+               
+
                   
 
-
-
-
+                
 
       </body>
 
