@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Home Page</title>
+	<link href="style.css" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
+
+</head>
+
+
+
+
+
+
+<style>
+
+
+
+
+
+ul {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			overflow: hidden;
+			background-color: #333;
+		}
+
+		li {
+			float: left;
+			font-size: 18px;
+		}
+
+		ol{
+			color:black;
+			font-size: 170%;
+			text-align: left; 
+
+		}
+
+
+
+		
+		body{
+			background-image: url(Images/coursewallpaper.jpg);
+            background-repeat: no-repeat;
+            background-attachment: fixed;  
+            background-size: cover;
+		}
+
+		p{
+			font-size: 19px;
+		}
+
+		h2{
+			color:white;
+			font-size: 25px;
+			text-shadow: 2px 2px 5px rgb(15, 15, 15);
+
+		}
+
+		h1{
+			text-shadow: 2px 2px 5px rgb(143, 228, 31);
+		}
+
+		.row:after {
+			content: "";
+			display: table;
+			clear: both;
+		}
+
+		* {
+			box-sizing: border-box;
+		}
+
+		div{
+			font-family: "Trirong", serif;
+			font-size: 80%;
+		}
+
+		p{
+			font-family: "Trirong", serif;
+			font-size: 19px;
+			color: white;
+		}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.collapsible {
+  background-color: #777;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active, .collapsible:hover {
+  background-color: #555;
+}
+
+.collapsible:after {
+  content: '\002B';
+  color: rgb(255, 0, 0);
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.content {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: rgb(199, 151, 49);
+}
+
+
+
+		
+.column1 {
+			float: left;
+			width: 33.33%;
+    		padding: 5px;
+			font-size: 10px;
+  		}
+
+
+      
+</style>
+</head>
+<body>
+
+  <p id="date"></p>
+  <header>
+    <h1>MERSEYSIDE OPEN HOUSE</h1>
+    
+    
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="Course.html">Course</a></li>
+        <li><a href="AboutUs.html">About Us</a></li>
+      </ul>
+    </header>
+    <script src="script.js">
+      
+    </script>
+    
+    
+    <h2>Merseyside Facilities Collapsibles</h2>
+    
+    
+
+  
+    <div class="row">
+      <div class="column1">
+        <img src="Images/Courses_Blocks.jpg" alt="photoshootpic2" style="width:100%">
+      </div>
+      
+      <div class="column1">
+        <button class="collapsible">[Different Blocks In The Campus] Open Collapsible</button>
+        <div class="content">
+          <p>Have a breif explaination of the courses block we have around</p>
+        </div>
+
+        <div class="column1">
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="row">
+      <div class="column1">
+        <img src="Images/Retail_Store.jpg" alt="photoshootpic2" style="width:100%">
+      </div>
+      
+      <div class="column1">
+        <button class="collapsible">[Retails Stores In The Campus] Open Collapsible</button>
+        <div class="content">
+          <p>Brief explaination of the school retails like having a popular store and some Fast Food chain</p>
+        </div>
+
+        <div class="column1">
+        </div>
+      </div>
+    </div>
+
+ 
+  
+
+
+    <div class="row">
+      <div class="column1">
+        <img src="Images/SportFacilities.jpg" alt="photoshootpic2" style="width:100%">
+      </div>
+      
+      <div class="column1">
+        <button class="collapsible">[The Facilities In The Campus] Open Collapsible</button>
+        <div class="content">
+          <p>Brief Explaintation of the facilties we have provide for students</p>
+        </div>
+
+        <div class="column1">
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    } 
+  });
+}
+</script>
+
+</body>
+</html>
