@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Immersive Media Game Page</title>
+<title>Information Technology Game Page</title>
 <style>
 body {
 			color: white;
@@ -155,7 +155,7 @@ function update() {
     gameState.rectVelocity.y = 0;
   }
   ctx.fillRect(gameState.rectPosX, gameState.rectPosY, 10, 10);
-  ctx.fillStyle = "#0000FF";
+  ctx.fillStyle = "#d1d1e6";
   for (let i = 0; i < gameState.enemies.length; ++i) {
     gameState.enemies[i].x -= gameState.enemies[i].velocity;
     ctx.fillRect(gameState.enemies[i].x, gameState.enemies[i].y, 10, 10);
@@ -230,9 +230,9 @@ document.addEventListener("keydown", function(event) {
 
 
 <p><h1><u>Instructions</h1></u></p>
-<p>Text</p>
-<p>Text</p>
-<p>Text</p>
+<p>Use the arrow Keys to play this game as follows: UP-Key (move up), Down-Key (move down), Right-Key (increase speed), Left-Key (reduse speed) </p>
+<p>In this game, you (The square box) must dodge the incoming asteroids (cubes) while surviving for as long as you can. Fly up and down to avoid getting hit, or go fast or slow to adjust your placement to avoid the asteroids for more ease. </p>
+<p>May the longest runner win!</p>
 <p>If you feel like you had enough fun with this mini game, click "Previous Page" to return back to the IT Course page. Or, feeling like you can do better? Click the button above "Restart the game" to restart the game.</p>
 
 

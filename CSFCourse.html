@@ -1,16 +1,225 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Cybersecurity & Digtial Forensics Page</title>
+	<link href="style.css" rel="stylesheet" type="text/css" />
+
+
+
 <style>
-* {
+		
+		body{
+			background-image: url(Images/ITCourseWallpaper.jpg);
+            background-repeat: no-repeat;
+            background-attachment: fixed;  
+            background-size: cover;
+		}
+
+    h4{
+      color: white;
+    }
+
+    h1{
+			text-shadow: 2px 2px 5px rgb(0, 238, 255);
+      text-align: left;
+      font-size: 35px;
+		}
+
+    h2{
+      color: white;
+      text-shadow: 2px 2px 5px rgb(0, 0, 0);
+      font-size: 30px;
+      text-align: center;
+      background-color: #1f1f20;
+    }
+
+    
+		div{
+			font-family: "Trirong", serif;
+			font-size: 80%;
+		}
+
+    a{
+      font-size: 13px;
+    }
+
+
+
+  li{
+    color:white;
+    font-size: 18px;
+  }
+
+
+
+  
+  table{
+			background-color: white;
+			margin-left:auto;
+      margin-right:auto;
+		}
+		
+		table,
+		th,
+		td {
+			padding: 15px;
+			border: 2px solid black;
+			border-collapse: collapse;
+			text-align: left;
+			width: 800px;
+			font-size: 15px;
+			
+		}
+
+		th{
+			background-color: grey;
+		}
+
+
+    .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  .column2 {
+    float: left;
+    width: 33%;
+    padding: 4px;
+    color: white;
+  }
+
+  .column3 {
+    float: left;
+    width: 33%;
+    padding: 4px;
+    color: white;
+  }
+
+  p{
+    color: white;
+    font-size: 19px;
+  }
+
+  
+
+
+
+
+
+  /* Expanding Grid */
+
+  * {
   box-sizing: border-box;
 }
 
-body {
-  font-family: Arial;
-  font-size: 17px;
+
+
+/* The grid: Three equal columns that floats next to each other */
+.column4 {
+  float: left;
+  width: 33.33%;
+  padding: 50px;
+  text-align: center;
+  font-size: 25px;
+  cursor: pointer;
+  color: white;
 }
+
+.containerTab {
+  padding: 20px;
+  color: white;
+
+}
+
+/* Clear floats after the columns */
+.row2:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Closable button inside the container tab */
+.closebtn {
+  float: right;
+  color: white;
+  font-size: 35px;
+  cursor: pointer;
+}
+
+
+
+/*About our team*/
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column_team {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+  height: 330px;
+  background-color: rgb(199, 151, 49);
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #2d3036;
+  color: white;
+}
+
+.container_team {
+  padding: 0 16px;
+}
+
+.container_team::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: rgb(29, 28, 28);
+}
+
+.button_team {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button_team:hover {
+  background-color: #555;
+}
+
+@media screen and (max-width: 650px) {
+  .column_team {
+    width: 100%;
+    display: block;
+  }
+}
+
+
+/* Responsive Image with text*/
 
 .container_responsive {
   position: relative;
@@ -29,19 +238,200 @@ body {
   width: 100%;
   padding: 20px;
 }
+
+
+
+
+
+
+
+
+
+
 </style>
 </head>
+
+
 <body>
+    <p id="date"></p>
+    <header>
+        <h1>MERSEYSIDE OPEN HOUSE</h1>
+        
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Course.html">Course</a></li>
+                <li><a href="AboutUs.html">About Us</a></li>
+            </ul>
+        </header>
+        <script src="script.js">
+        </script>
+        
+
+        <div class="container">
+            <img src="Images/CSFCoverPage.jpg" alt="main cover picture" width="1502">
+            <div class="centered">CYBERSECURITY & DIGITAL FORENSICS</div>
+        </div>
 
 
 
-<div class="container_responsive">
-  <img src="Images/coursewallpaper.jpg" alt="Notebook" style="width:100%;">
-  <div class="content">
-    <h1>Heading</h1>
-    <p>Lorem ipsum dolor sit amet, an his etiam torquatos. Tollit soleat phaedrum te duo, eum cu recteque expetendis neglegentur. Cu mentitum maiestatis persequeris pro, pri ponderum tractatos ei.</p>
-  </div>
-</div>
 
-</body>
-</html>
+        <div style="text-align:center">
+          <h2>To see what you will be learning click on the boxes below</h2>
+        </div>
+        
+        <!-- Three columns -->
+        <div class="row">
+          <div class="column4" onclick="openTab('b1');" style="background:rgb(240, 189, 50);">
+            Year 1 <br>↓ 
+          </div>
+          <div class="column4" onclick="openTab('b2');" style="background:rgb(57, 57, 235);">
+            Year 2 <br>↓
+          </div>
+          <div class="column4" onclick="openTab('b3');" style="background:rgb(240, 189, 50);">
+            Year 3 <br>↓
+          </div>
+        </div>
+        
+        <div id="b1" class="containerTab" style="display:none;background:rgb(54, 54, 54)">
+          <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+          <h2>Year 1</h2>
+          <p>Ethical Hacking<br>This module introduces students to fundamentals penetration testing and getting will be taught the process model to locate and establish targets, find vulnerabilites and exploit flaws. They will always be taught on the goal of helping owner improve security practices, they have hands-o practice on actual pen-testing that will involes reconnaissance to map out the network infrasture, scanning the vulnerable in the system.<br><br>Mobile Device Security & Forensics<br>This module introduces students to aims extracting and utilise digtial evidence on mobile devices, they will always be learning the current forensic tools to preserve, accuqire & examine data store in the mobile device. The brand and the platform will be on Andriod, Iphone, Windows Mobile<br><br>Fundamentals for IT Professionals 3<br>This module focuses on stepping stone for student in their IT career, they will gain the insight into the info comn world and industry with the skills sets required in their IT career path.</p>
+        </div>
+        
+        <div id="b2" class="containerTab" style="display:none;background:rgb(54, 54, 54)">
+          <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+          <h2>Year 2</h2>
+          <p>Network Forensics<br>This module introduces students to learned network tools like routers, IDS, firewalls, even switches that contains evidence that can break a case. Student will accuqire the knowledge and skills to recover evidence from the networking based device.<br><br>Data Structure & Algorithms<br>This module exposes in to analyse, design, implement, test and doing documenation of programmes involvin data structure. The emphasis is on the use of Object Oriented language platform to give the concrete implentation to various abstract data type.<br><br>Deep Learning<br>This modules provide student with fundamentals of deep learning and it's applications and provides student with the essential context and materials background knowledge. Student will also learn the relevant models such as like the Neural Networks and practical applications of computer vision and natural lanuage processing.</p>
+        </div>
+        
+        <div id="b3" class="containerTab" style="display:none;background:rgb(54, 54, 54)">
+          <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+          <h2>Year 3</h2>
+          <p>Internship<br>This module provides students with the opportunity to apply the skills and knowledge that they gained in school to develop an IT solution to solve a practical problem that benefits their company.<br><br>Data Visualisation<br>This module provides of creating effective data avisualisations based on the principles being learned from graphic design, perceptual psychology.<br><br>Capstone project<br>This module is where the students are required to complete a substantial project that can be a real-world problem proposed by a client, or a friend in pursuit of their personal interests.</p>
+        </div>
+
+        <br><br><br>
+      
+
+
+
+
+
+
+
+        <div class="column">
+            <table>
+              <tr>
+                <th>Career Prospects</th>
+                <th>Further Studies</th>
+                <th>Course Overview</th>
+              </tr>
+              
+              <tr>
+                <td>Cybersecurity Track, Security Analyst, Penetration Testing Analyst</td>
+                <td>Opens doors to pursue a degree at reputable local and overseas universities.<br><br>PSG University, Dortmund of University, Palance University</td>
+                <td>Being able to protect computer operating system, networks and data from all the vulnerabilites in cyber attacks, learning to moniotr and keeping a lookout if hacker entered the unauthorised system they will be ban and fines. Having to learn all this it will be great future in the IT world as it could have company employing you to protect their organisaztion server and systems.</td>
+
+            </tr>
+            </table>
+            
+            
+            <p></p>
+
+
+            <br>
+
+              
+
+              <div class="row">
+                <div class="column3">
+                  <img src="Images/CSF_1.jpg" alt="EXDLayout" style="width:100%">
+                  <p>Text</p>
+                </div>
+
+                  <div class="column3">
+                    <img src="Images/CSF_2.jpg" alt="BobbaFett" style="width:100%">
+                    <p>Text</p>
+                  </div>
+
+                    <div class="column3">
+                      <img src="Images/Database_ERModel.jpg" alt="pikachu" style="width:100%">
+                      <p>Creation of ER Model before implementing Data Directory</p>
+                    </div>
+                  </div>
+
+
+
+                  <div class="row">
+                    <div class="column3">
+                      <img src="Images/ID_Assignment.jpg" alt="EXDLayout" style="width:100%">
+                      <p>Interactive Design assignment which helps us to implement interaction design and to to build interactive applications around it with what we have learned.</p>
+                    </div>
+    
+                      <div class="column3">
+                        <img src="Images/PFD_Assignment.jpg" alt="BobbaFett" style="width:100%">
+                        <p>In our PFD we created a blog that allows public to look through food articles on the web for good and affordable hawker food.<br><br><br>Link for video<br><a href="https://connectnpedu-my.sharepoint.com/personal/ckh1_adj_np_edu_sg/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fckh1%5Fadj%5Fnp%5Fedu%5Fsg%2FDocuments%2FRecordings%2FCall%20with%20Ang%20and%2020%20others%2D20220209%5F123232%2DMeeting%20Recording%2Emp4&parent=%2Fpersonal%2Fckh1%5Fadj%5Fnp%5Fedu%5Fsg%2FDocuments%2FRecordings">Click Here to watch video</a></p>
+                      </div>
+    
+                        <div class="column3">
+                          <img src="Images/SDD_IncomeTracker.jpg" alt="pikachu" style="width:100%">
+                          <p>SDD assignemnt require us to create a protoype that allows individuals users to know where their money goes and they could ensure befitting strategy of spending their money wisely. </p>
+                        </div>
+                      </div>
+
+
+                  <div class="container">
+                    <img src="Images/GameCoverPage2.jpg" alt="main cover picture" width="1502">
+                    <div class="centered">GAME SECTION</div>
+                  </div>
+
+
+                  <h2>WELCOME TO THE GAMING CORNER THAT OUR IT STUDENT CREATED</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                  <h2 style="text-align:center">"CSF Student have their said"</h2>   
+          
+                  
+
+                  <div class="container_responsive">
+                    <img src="Images/GamePlay2.jpg" alt="Notebook" style="width:100%;">
+                    <div class="content">
+                      <h1>Nigel Comments</h1>
+                      <p>Text</p>
+                    </div>
+                  </div>
+
+                    <br><br>
+
+                  <div class="container_responsive">
+                    <img src="Images/GamePlay3.jpg" alt="Notebook" style="width:100%;">
+                    <div class="content">
+                      <h1>Leon Comments</h1>
+                      <p>Text</p>
+                    </div>
+                  </div>
+
+
+                  
+
+
+
+
+
+      </body>
+
+      </html>
