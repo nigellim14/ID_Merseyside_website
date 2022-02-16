@@ -5,16 +5,14 @@
 	<meta name="viewport" content="width=device-width">
 	<title>Information Technology Page</title>
 	<link href="style.css" rel="stylesheet" type="text/css" />
-
-
-
-<style>
+  </head>
+  <style>
 		
 		body{
 			background-image: url(Images/ITCourseWallpaper.jpg);
-            background-repeat: no-repeat;
-            background-attachment: fixed;  
-            background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;  
+      background-size: cover;
 		}
 
     h4{
@@ -35,7 +33,6 @@
       background-color: #1f1f20;
     }
 
-    
 		div{
 			font-family: "Trirong", serif;
 			font-size: 80%;
@@ -45,17 +42,12 @@
       font-size: 13px;
     }
 
+    li{
+      color:white;
+      font-size: 18px;
+    }
 
-
-  li{
-    color:white;
-    font-size: 18px;
-  }
-
-
-
-  
-  table{
+    table{
 			background-color: white;
 			margin-left:auto;
       margin-right:auto;
@@ -69,20 +61,19 @@
 			border-collapse: collapse;
 			text-align: left;
 			width: 800px;
-			font-size: 15px;
-			
+			font-size: 15px;	
 		}
 
 		th{
 			background-color: grey;
 		}
 
-
     .row::after {
     content: "";
     clear: both;
     display: table;
   }
+
   .column2 {
     float: left;
     width: 33%;
@@ -102,114 +93,98 @@
     font-size: 19px;
   }
 
-  
-
-
-
-
-
   /* Expanding Grid */
-
   * {
   box-sizing: border-box;
 }
 
+  .column4 {
+    float: left;
+    width: 33.33%;
+    padding: 50px;
+    text-align: center;
+    font-size: 25px;
+    cursor: pointer;
+    color: white;
+  }
 
+  .containerTab {
+    padding: 20px;
+    color: white;
+  }
 
-/* The grid: Three equal columns that floats next to each other */
-.column4 {
-  float: left;
-  width: 33.33%;
-  padding: 50px;
-  text-align: center;
-  font-size: 25px;
-  cursor: pointer;
-  color: white;
-}
+  .row2:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
 
-.containerTab {
-  padding: 20px;
-  color: white;
+  .closebtn {
+    float: right;
+    color: white;
+    font-size: 35px;
+    cursor: pointer;
+  }
+  
+  /*About our team*/
+  html {
+    box-sizing: border-box;
+  }
 
-}
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
 
-/* Clear floats after the columns */
-.row2:after {
-  content: "";
-  display: table;
-  clear: both;
-}
+  .column_team {
+    float: left;
+    width: 33.3%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+  }
 
-/* Closable button inside the container tab */
-.closebtn {
-  float: right;
-  color: white;
-  font-size: 35px;
-  cursor: pointer;
-}
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: 8px;
+    height: 330px;
+    background-color: rgb(199, 151, 49);
+  }
 
+  .about-section {
+    padding: 50px;
+    text-align: center;
+    background-color: #2d3036;
+    color: white;
+  }
 
+  .container_team {
+    padding: 0 16px;
+  }
 
-/*About our team*/
+  .container_team::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
 
-html {
-  box-sizing: border-box;
-}
+  .title {
+    color: rgb(29, 28, 28);
+  }
 
-*, *:before, *:after {
-  box-sizing: inherit;
-}
+  .button_team {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+  }
 
-.column_team {
-  float: left;
-  width: 33.3%;
-  margin-bottom: 16px;
-  padding: 0 8px;
-}
-
-.card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  margin: 8px;
-  height: 330px;
-  background-color: rgb(199, 151, 49);
-}
-
-.about-section {
-  padding: 50px;
-  text-align: center;
-  background-color: #2d3036;
-  color: white;
-}
-
-.container_team {
-  padding: 0 16px;
-}
-
-.container_team::after, .row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
-.title {
-  color: rgb(29, 28, 28);
-}
-
-.button_team {
-  border: none;
-  outline: 0;
-  display: inline-block;
-  padding: 8px;
-  color: white;
-  background-color: #000;
-  text-align: center;
-  cursor: pointer;
-  width: 100%;
-}
-
-.button_team:hover {
-  background-color: #555;
-}
+  .button_team:hover {
+    background-color: #555;
+  }
 
 @media screen and (max-width: 650px) {
   .column_team {
@@ -218,45 +193,36 @@ html {
   }
 }
 
+  /* Responsive Image with text*/
+  .container_responsive {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+  }
 
-/* Responsive Image with text*/
+  .container img {vertical-align: middle;}
 
-.container_responsive {
-  position: relative;
-  max-width: 800px;
-  margin: 0 auto;
-}
+  .container_responsive .content {
+    position: absolute;
+    bottom: 0;
+    background: rgb(0, 0, 0); /* Fallback color */
+    background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+  }
 
-.container img {vertical-align: middle;}
-
-.container_responsive .content {
-  position: absolute;
-  bottom: 0;
-  background: rgb(0, 0, 0); /* Fallback color */
-  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
-  color: #f1f1f1;
-  width: 100%;
-  padding: 20px;
-}
-
-
-li a {
-			display: block;
-			text-align: center;
-			padding: 14px 150px;
-			text-decoration: none;
-		}
-
-
+  li a {
+		display: block;
+		text-align: center;
+		padding: 14px 150px;
+		text-decoration: none;
+	}
   
-    a{
-			font-size: 15px;
-			color: rgb(129, 125, 125);
-		}
-
-
-
-
+  a{
+		font-size: 15px;
+		color: rgb(129, 125, 125);
+	}
 
 </style>
 </head>
@@ -275,6 +241,8 @@ li a {
                 <li><a href="AboutUs.html">About Us</a></li>
             </ul>
         </header>
+
+
         <script src="script.js">
         </script>
         
@@ -285,12 +253,11 @@ li a {
         </div>
 
 
-
-
         <div style="text-align:center">
           <h2>To see what you will be learning click on the boxes below</h2>
         </div>
         
+
         <!-- Three columns -->
         <div class="row">
           <div class="column4" onclick="openTab('b1');" style="background:rgb(240, 189, 50);">
@@ -304,6 +271,7 @@ li a {
           </div>
         </div>
         
+
         <div id="b1" class="containerTab" style="display:none;background:rgb(54, 54, 54)">
           <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
           <h2>Year 1</h2>
@@ -321,15 +289,8 @@ li a {
           <h2>Year 3</h2>
           <p>Internship<br>This module provides students with the opportunity to apply the skills and knowledge that they gained in school to develop an IT solution to solve a practical problem that benefits their company.<br><br>Data Visualisation<br>This module provides of creating effective data avisualisations based on the principles being learned from graphic design, perceptual psychology.<br><br>Capstone project<br>This module is where the students are required to complete a substantial project that can be a real-world problem proposed by a client, or a friend in pursuit of their personal interests.</p>
         </div>
-
         <br><br><br>
       
-
-
-
-
-
-
 
         <div class="column">
             <table>
@@ -346,26 +307,20 @@ li a {
 
             </tr>
             </table>
-            
-            
             <p></p>
-
-
             <br>
+
 
             <div class="row">
               <div class="column2">
                 <iframe width="490" height="380" src="https://www.youtube.com/embed/oFf1Eeabrk8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>       
                 <p>Assignment for Spreadsheet Engineering to research and work on semi-structured and unstructured tasks and problems by applying their knowledge of Microsoft Excel functions.</p>
               </div>
-
               
               <div class="column2">
                 <iframe width="490" height="380" src="Video/AdvancedUIAutomation.mp4" title="video player" frameborder="0" allow="accelerometer; autoplay = 0; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 <p>UI automation testing is a skill where testing are being process and performed using an tool to automate, instead of having a test to click through the application to verify the data and the test case.</p>
               </div>
-              
-
                             
               <div class="column2">
                 <iframe width="490" height="380" src="Video/EC2_AutoScaling.mp4" title="video player" frameborder="0" allow="accelerometer; autoplay = 0; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -373,8 +328,6 @@ li a {
               </div>
             </div>
 
-
-              
 
               <div class="row">
                 <div class="column3">
@@ -392,7 +345,6 @@ li a {
                       <p>Creation of ER Model before implementing Data Directory</p>
                     </div>
                   </div>
-
 
 
                   <div class="row">
@@ -422,19 +374,6 @@ li a {
                   <h2>WELCOME TO THE GAMING CORNER THAT OUR IT STUDENT CREATED</h2>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
                   <h2 style="text-align:center">"Game Developer Team"</h2>
                   <div class="row">
                     <div class="column_team">
@@ -448,9 +387,7 @@ li a {
                         </div>
                       </div>
                     </div>
-
-                    
-                          
+  
                   
                     <div class="column_team">
                       <div class="card">
@@ -463,7 +400,6 @@ li a {
                         </div>
                       </div>
                     </div>
-
 
                     
                     <div class="column_team">
@@ -478,21 +414,6 @@ li a {
                       </div>
                     </div>
                   </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
                   <div class="row">
@@ -513,9 +434,6 @@ li a {
                     <div class="column2">
                     </div>
                   </div>
-
-                    
-
                   
 
                   <div class="container_responsive">
@@ -525,8 +443,7 @@ li a {
                       <p>This game that we created is by using Javascript and HTML programming knowledge. It's a challenging game that user will have to move around in the galaxy world to prevent themselves from touching the white floating obstacles all around. It might look easy at first sight, but if you give it a try it will require some fast fingers movement to move the square around by using the keyboard "UP", "DOWN", "LEFT","RIGHT". While user are playing the scoreboard will be displayed above the canvas for user to take note of their scores, that will allow them to know if they have beat their previous high score.</p>
                     </div>
                   </div>
-
-                    <br><br>
+                  <br><br>
 
                   <div class="container_responsive">
                     <img src="Images/GamePlay3.jpg" alt="Notebook" style="width:100%;">
@@ -535,8 +452,6 @@ li a {
                       <p>This game heavily relies on your awareness of the area and timing. Using the arrow keys to move up and down, or changing the movement speed by pressing left and right. The game gets more and more challenging for each block you go pass, which is also how you score this game which is the score goes up to each blocks you move past.  </p>
                     </div>
                   </div>
-
-
                   
 
                   <footer>
@@ -544,10 +459,7 @@ li a {
                     <p>&copy; Merseyide Polytechnic</p>
                     <p>Follow us on <a href="https://www.instagram.com/merseysidecampus/">Instagram</a></p>
                   </footer>
-
-
-
-
-      </body>
-
-      </html>
+                
+                
+                </body>
+                </html>

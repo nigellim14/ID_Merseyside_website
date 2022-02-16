@@ -5,16 +5,14 @@
 	<meta name="viewport" content="width=device-width">
 	<title>Cybersecurity & Digtial Forensics Page</title>
 	<link href="style.css" rel="stylesheet" type="text/css" />
-
-
-
+</head>
 <style>
 		
 		body{
-			background-image: url(Images/CSF_Wallpaper.jpg);
-            background-repeat: no-repeat;
-            background-attachment: fixed;  
-            background-size: cover;
+      background-image: url(Images/CSF_Wallpaper.jpg);
+      background-repeat: no-repeat;
+      background-attachment: fixed;  
+      background-size: cover;
 		}
 
     h4{
@@ -35,7 +33,6 @@
       background-color: #1f1f20;
     }
 
-    
 		div{
 			font-family: "Trirong", serif;
 			font-size: 80%;
@@ -45,17 +42,12 @@
       font-size: 13px;
     }
 
+    li{
+      color:white;
+      font-size: 18px;
+    }
 
-
-  li{
-    color:white;
-    font-size: 18px;
-  }
-
-
-
-  
-  table{
+    table{
 			background-color: white;
 			margin-left:auto;
       margin-right:auto;
@@ -70,115 +62,92 @@
 			text-align: left;
 			width: 800px;
 			font-size: 15px;
-			
 		}
 
 		th{
 			background-color: grey;
 		}
 
-
     .row::after {
-    content: "";
-    clear: both;
-    display: table;
+      content: "";
+      clear: both;
+      display: table;
+    }
+    .column2 {
+      float: left;
+      width: 33%;
+      padding: 4px;
+      color: white;
+    }
+
+    .column3 {
+      float: left;
+      width: 33%;
+      padding: 4px;
+      color: white;
+    }
+
+    p{
+      color: white;
+      font-size: 19px;
+    }
+
+    /* Expanding Grid */
+    * {
+    box-sizing: border-box;
   }
-  .column2 {
-    float: left;
-    width: 33%;
-    padding: 4px;
-    color: white;
-  }
 
-  .column3 {
-    float: left;
-    width: 33%;
-    padding: 4px;
-    color: white;
-  }
+    .column4 {
+      float: left;
+      width: 33.33%;
+      padding: 50px;
+      text-align: center;
+      font-size: 25px;
+      cursor: pointer;
+      color: white;
+    }
 
-  p{
-    color: white;
-    font-size: 19px;
-  }
+    .containerTab {
+      padding: 20px;
+      color: white;
+    }
 
-  
+    .row2:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
 
+    .closebtn {
+      float: right;
+      color: white;
+      font-size: 35px;
+      cursor: pointer;
+    }
 
+    .columnCourse {
+      float: left;
+      width: 25%;
+      padding: 10px;
+      height: 300px; 
+    }
 
-
-
-  /* Expanding Grid */
-
-  * {
-  box-sizing: border-box;
-}
-
-
-
-/* The grid: Three equal columns that floats next to each other */
-.column4 {
-  float: left;
-  width: 33.33%;
-  padding: 50px;
-  text-align: center;
-  font-size: 25px;
-  cursor: pointer;
-  color: white;
-}
-
-.containerTab {
-  padding: 20px;
-  color: white;
-
-}
-
-/* Clear floats after the columns */
-.row2:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Closable button inside the container tab */
-.closebtn {
-  float: right;
-  color: white;
-  font-size: 35px;
-  cursor: pointer;
-}
-
-
-.columnCourse {
-  float: left;
-  width: 25%;
-  padding: 10px;
-  height: 300px; /* Should be removed. Only for demonstration */
-}
-
-
-
-li a {
+    li a {
 			display: block;
 			text-align: center;
 			padding: 14px 150px;
 			text-decoration: none;
-		}
-
-      
-			a{
+		}      
+			
+    a{
 			font-size: 15px;
 			color: white;
 		}
 
-
-
 </style>
-</head>
 
 
 <body>
-    <p id="date"></p>
     <header>
         <h1>MERSEYSIDE OPEN HOUSE</h1>
         
@@ -190,6 +159,7 @@ li a {
                 <li><a href="AboutUs.html">About Us</a></li>
             </ul>
         </header>
+
         <script src="script.js">
         </script>
         
@@ -198,8 +168,6 @@ li a {
             <img src="Images/CSFCoverPage.jpg" alt="main cover picture" width="1502">
             <div class="centered">CYBERSECURITY & DIGITAL FORENSICS</div>
         </div>
-
-
 
 
         <div style="text-align:center">
@@ -218,6 +186,7 @@ li a {
             Year 3 <br>↓
           </div>
         </div>
+
         
         <div id="b1" class="containerTab" style="display:none;background:rgb(54, 54, 54)">
           <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
@@ -236,11 +205,8 @@ li a {
           <h2>Year 3</h2>
           <p>Internship<br>This module provides students with the opportunity to apply the skills and knowledge that they gained in school to develop an IT solution to solve a practical problem that benefits their company.<br><br>Data Visualisation<br>This module provides of creating effective data avisualisations based on the principles being learned from graphic design, perceptual psychology.<br><br>Capstone project<br>This module is where the students are required to complete a substantial project that can be a real-world problem proposed by a client, or a friend in pursuit of their personal interests.</p>
         </div>
-
         <br><br><br>
       
-
-
 
         <div class="column">
             <table>
@@ -257,14 +223,9 @@ li a {
 
             </tr>
             </table>
-            
-            
             <p></p>
-
-
             <br>
 
-              
 
               <div class="row">
                 <div class="column3">
@@ -282,7 +243,6 @@ li a {
                       <p>[CyberTest System]<br>Having tickets record of methodologies and issues tactics to measure how effective the potential attacks</p>
                     </div>
                   </div>
-
 
 
                   <div class="row">
@@ -311,30 +271,32 @@ li a {
 
                   <h2>Course Curriculum & Prescribed Electives</h2>
 
+
                   <div class="rowCourse">
                     <div class="columnCourse" style="background-color:rgb(204, 189, 51);">
                       <h2>CYBERSECURITY TRACK</h2>
                       <p>• Cloud Computing Security<br>• Cybersecurity Attack & Defense <br>• Cybersecurity Operations & Intelligence <br> • Mobile Security <br> • Operations Security</p>
                     </div>
+
                     <div class="columnCourse" style="background-color:rgb(39, 169, 209);">
                       <h2>CYBER FORENSICS TRACK</h2>
                       <p>• Advanced Cyber Attack Forensic Techniques <br>• Cyber Forensic Process <br> • Disaster Recovery & Finance Continuity Management <br> • Malware Analysis
                         </p>
                     </div>
+
                     <div class="columnCourse" style="background-color:rgb(214, 46, 46);">
                       <h2>CROSSOVER-DISCIPLINARY ELECTIVE </h2>
                       <p> • Entrepreneurship <br> • Foundation of AI <br> • Robotic Process Automation <br> • Social Media Analytics</p>
                     </div>
+
                     <div class="columnCourse" style="background-color:rgb(78, 69, 69);">
                       <h2>This diploma lets you... </h2>
                       <p>• Discover how to bulit the services and networks, and keep them from cyber attack and safe from hacker.<br><br> • Write programs to connect sensors and software, so as to develop smart solutions for various organisaztion and industry such as healthcare, transportation and retail.</p>
                     </div>
                   </div>
-              
 
            
                   <h4>*Modules may be revised as align to learning content with developing technologies and trends.</h4>
-
 
 
                   <div class="container">
@@ -360,21 +322,13 @@ li a {
                         </div>
                       </div>
 
-
     
                       <footer>
                         <hr>
                         <p>&copy; Merseyide Polytechnic</p>
                         <p>Follow us on <a href="https://www.instagram.com/merseysidecampus/">Instagram</a></p>
                       </footer>
-                
-
-               
-
-  
-
-                
-
-      </body>
-
-      </html>
+                    
+                    
+                    </body>
+                    </html>

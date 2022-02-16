@@ -5,9 +5,7 @@
 	<meta name="viewport" content="width=device-width">
 	<title>Immersive Media Page</title>
 	<link href="style.css" rel="stylesheet" type="text/css" />
-
-
-
+</head>
 <style>
 		
 		body{
@@ -35,7 +33,6 @@
       background-color: #1f1f20;
     }
 
-    
 		div{
 			font-family: "Trirong", serif;
 			font-size: 80%;
@@ -45,20 +42,15 @@
       font-size: 13px;
     }
 
+    li{
+      color:white;
+      font-size: 18px;
+    }
 
-
-  li{
-    color:white;
-    font-size: 18px;
-  }
-
-
-
-  
-  table{
+    table{
 			background-color: white;
 			margin-left:auto;
-            margin-right:auto;
+      margin-right:auto;
 		}
 		
 		table,
@@ -70,19 +62,18 @@
 			text-align: left;
 			width: 800px;
 			font-size: 15px;
-			
 		}
 
 		th{
 			background-color: grey;
 		}
 
-
     .row::after {
     content: "";
     clear: both;
     display: table;
   }
+
   .column2 {
     float: left;
     width: 33%;
@@ -102,114 +93,98 @@
     font-size: 19px;
   }
 
-  
-
-
-
-
-
   /* Expanding Grid */
-
   * {
   box-sizing: border-box;
 }
 
+  .column4 {
+    float: left;
+    width: 33.33%;
+    padding: 50px;
+    text-align: center;
+    font-size: 25px;
+    cursor: pointer;
+    color: white;
+  }
 
+  .containerTab {
+    padding: 20px;
+    color: white;
+  }
 
-/* The grid: Three equal columns that floats next to each other */
-.column4 {
-  float: left;
-  width: 33.33%;
-  padding: 50px;
-  text-align: center;
-  font-size: 25px;
-  cursor: pointer;
-  color: white;
-}
+  .row2:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
 
-.containerTab {
-  padding: 20px;
-  color: white;
-
-}
-
-/* Clear floats after the columns */
-.row2:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Closable button inside the container tab */
-.closebtn {
-  float: right;
-  color: white;
-  font-size: 35px;
-  cursor: pointer;
-}
-
-
+  .closebtn {
+    float: right;
+    color: white;
+    font-size: 35px;
+    cursor: pointer;
+  }
 
 /*About our team*/
-
-html {
-  box-sizing: border-box;
-}
+  html {
+    box-sizing: border-box;
+  }
 
 *, *:before, *:after {
   box-sizing: inherit;
 }
 
-.column_team {
-  float: left;
-  width: 33.3%;
-  margin-bottom: 16px;
-  padding: 0 8px;
-}
+  .column_team {
+    float: left;
+    width: 33.3%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+  }
 
-.card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  margin: 8px;
-  height: 330px;
-  background-color: rgb(199, 151, 49);
-}
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: 8px;
+    height: 330px;
+    background-color: rgb(199, 151, 49);
+  }
 
-.about-section {
-  padding: 50px;
-  text-align: center;
-  background-color: #2d3036;
-  color: white;
-}
+  .about-section {
+    padding: 50px;
+    text-align: center;
+    background-color: #2d3036;
+    color: white;
+  }
 
-.container_team {
-  padding: 0 16px;
-}
+  .container_team {
+    padding: 0 16px;
+  }
 
-.container_team::after, .row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
+  .container_team::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
 
-.title {
-  color: rgb(29, 28, 28);
-}
+  .title {
+    color: rgb(29, 28, 28);
+  }
 
-.button_team {
-  border: none;
-  outline: 0;
-  display: inline-block;
-  padding: 8px;
-  color: white;
-  background-color: #000;
-  text-align: center;
-  cursor: pointer;
-  width: 100%;
-}
+  .button_team {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+  }
 
-.button_team:hover {
-  background-color: #555;
-}
+  .button_team:hover {
+    background-color: #555;
+  }
 
 @media screen and (max-width: 650px) {
   .column_team {
@@ -218,55 +193,42 @@ html {
   }
 }
 
+/* Responsive Image with text*/ 
+  .container_responsive {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+  }
 
-/* Responsive Image with text*/
+  .container img {vertical-align: middle;}
 
-.container_responsive {
-  position: relative;
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-.container img {vertical-align: middle;}
-
-.container_responsive .content {
-  position: absolute;
-  bottom: 0;
-  background: rgb(0, 0, 0); /* Fallback color */
-  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
-  color: #f1f1f1;
-  width: 100%;
-  padding: 20px;
-}
+  .container_responsive .content {
+    position: absolute;
+    bottom: 0;
+    background: rgb(0, 0, 0); /* Fallback color */
+    background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+  }
 
 
-li a {
-			display: block;
-			text-align: center;
-			padding: 14px 150px;
-			text-decoration: none;
-		}
+  li a {
+		display: block;
+		text-align: center;
+		padding: 14px 150px;
+		text-decoration: none;
+  }
 
-    a{
-			font-size: 15px;
-			color: rgb(109, 106, 106);
-		}
-
-
-
-
-
-
-
-
-   
+  a{
+		font-size: 15px;
+		color: rgb(109, 106, 106);
+  }
 
 </style>
-</head>
 
 
 <body>
-    <p id="date"></p>
     <header>
         <h1>MERSEYSIDE OPEN HOUSE</h1>
         
@@ -278,6 +240,7 @@ li a {
                 <li><a href="AboutUs.html">About Us</a></li>
             </ul>
         </header>
+
         <script src="script.js">
         </script>
         
@@ -288,25 +251,27 @@ li a {
         </div>
 
 
-
-
         <div style="text-align:center">
           <h2>To see what you will be learning click on the boxes below</h2>
         </div>
         
+
         <!-- Three columns -->
         <div class="row">
           <div class="column4" onclick="openTab('b1');" style="background:rgb(240, 189, 50);">
             Year 1 <br>↓ 
           </div>
+
           <div class="column4" onclick="openTab('b2');" style="background:rgb(57, 57, 235);">
             Year 2 <br>↓
           </div>
+
           <div class="column4" onclick="openTab('b3');" style="background:rgb(240, 189, 50);">
             Year 3 <br>↓
           </div>
         </div>
         
+
         <div id="b1" class="containerTab" style="display:none;background:rgb(54, 54, 54)">
           <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
           <h2>Year 1</h2>
@@ -324,14 +289,7 @@ li a {
           <h2>Year 3</h2>
           <p>Digital Audio Design<br>This module introduces the skills of prouction techniques of audio and sound effects, ambient sounds and background music to further enchance the user experience in creating moods when playing games.<br><br>Internship<br>Following the 6-months Internship, students will be provided with the opportunity to apply their skills learnt within this course to actual, working companies/ organisations where they will learn sharpen the finest pounts of project planning and control issues relating to the course. </p>
         </div>
-
         <br><br><br>
-      
-
-
-
-
-
 
 
         <div class="column">
@@ -349,33 +307,26 @@ li a {
 
             </tr>
             </table>
-            
-            
             <p></p>
-
-
             <br>
+
 
             <div class="row">
               <div class="column2">
                 <iframe width="490" height="380" src="Video/Leon.mp4" title="video player" frameborder="0" allow="accelerometer; autoplay = 0; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 <p>Ice-Cream Truck Created during 3D Fundamentals.</p>
               </div>
-
               
               <div class="column2">
                 <iframe width="490" height="380" src="Video/YouTube_like.mp4" title="video player" frameborder="0" allow="accelerometer; autoplay = 0; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 <p>UX Microinteraction of a YouTube Like button created during Applied Design using Adobe XD</p>
               </div>
-
                             
               <div class="column2">
                 <iframe width="490" height="380" src="Video/Robot_Walk.mp4" title="video player" frameborder="0" allow="accelerometer; autoplay = 0; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 <p>Animated robot created during 3D Fundamentals</p>
               </div>
             </div>
-
-
               
 
               <div class="row">
@@ -396,7 +347,6 @@ li a {
                   </div>
 
 
-
                   <div class="row">
                     <div class="column3">
                       <img src="Images/ProductWork1.jpg" alt="Chinese new Year Drum" style="width:100%">
@@ -415,12 +365,6 @@ li a {
                       </div>
 
 
-
-
-
-
-
-
                   <div class="container">
                     <img src="Images/GameCoverPage.jpg" alt="main cover picture" width="1502">
                     <div class="centered">GAME SECTION</div>
@@ -428,19 +372,6 @@ li a {
 
 
                   <h2>WELCOME TO THE GAMING CORNER THAT OUR IM STUDENT CREATED</h2>
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
                   <h2 style="text-align:center">"Game Developer Team"</h2>
@@ -483,21 +414,6 @@ li a {
                   </div>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
                   <div class="row">
                     <div class="column2">
                     </div>
@@ -517,9 +433,6 @@ li a {
                   </div>
 
 
-
-
-
                   <div class="container_responsive">
                     <img src="Images/GamePlay.jpg" alt="Notebook" style="width:100%;">
                     <div class="content">
@@ -527,8 +440,7 @@ li a {
                       <p>A simple replica of that flappy bird game, brings me back the nostalgia and so were the hidden anger that I never knew I still had left within me. Ended up paying $15,000 of total hospital bills for breaking the ribs of several students along my fit of rage as well ad my broken hands. STill I enjoyed this simple yet fun game. Heavily recommend.</p>
                     </div>
                   </div>
-
-                    <br><br>
+                  <br><br>
 
                   <div class="container_responsive">
                     <img src="Images/GamePlay1.jpg" alt="Notebook" style="width:100%;">
@@ -537,27 +449,14 @@ li a {
                       <p>This game is a side-scroller where user will have to control a object and attempting to fly between obstacles object without hitting them. With the challenge game like this user will want to challenge themselves to acheive the high score it will eventually be addictive as they are playing as once they lose they will have the mind set to continue and to set a new record in the next try.</p>
                     </div>
                   </div>
-
-
-                    
-
                   
-		<footer>
-			<hr>
-			<p>&copy; Merseyide Polytechnic</p>
-			<p>Follow us on <a href="https://www.instagram.com/merseysidecampus/">Instagram</a></p>
-		</footer>
-
-
-
-
-
-          
-
-
-
-
-
-      </body>
-
-      </html>
+                  
+                  <footer>
+                    <hr>
+                    <p>&copy; Merseyide Polytechnic</p>
+                    <p>Follow us on <a href="https://www.instagram.com/merseysidecampus/">Instagram</a></p>
+                  </footer>
+                
+                
+                </body>
+                </html>
