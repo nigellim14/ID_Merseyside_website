@@ -1,5 +1,10 @@
 # ID_Merseyside_website
 
+[GitHub Page URL]
+https://nigellim14.github.io/ID_Merseyside_website/
+
+
+
 'Project Name: Merseyside'
 Hi teacher, am Nigel and together with me is Leon and our group assignment is called 'Merseyside'. For our assignment project 2 we have develop a case scenario of the theme 'Student & School'. We have plan and come out with a concept of a Campus school open house website, where student get to have a overview of the courses they are interested and to learn more about it. In additional there will also be information about the different school facilities and CCAs that are available for students. And of course there are many more. 
 
